@@ -1,0 +1,22 @@
+meta {
+  name: testing
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:3000/books/200
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "book_id": "200",
+      "title": "1984",
+      "author": " mukesh",
+      "genre": "Dystopian",
+      "year": 1949,
+      "copies": 10
+    }
+}
